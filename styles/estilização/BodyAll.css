@@ -1,0 +1,114 @@
+@font-face {
+  font-family: Cyreal;
+  src: url("../Lobster-Regular.ttf");
+}
+
+@font-face {
+  font-family: DM Sans;
+  src: url("../DMSans-Bold.ttf");
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(184, 187, 189);
+  color: #fff;
+  font-family: "DM Sans";
+  height: 100vh;
+}
+
+.listButtons {
+  display: flex;
+  margin: 1.3rem;
+  justify-content: space-between;
+}
+.listButtons a {
+  padding: 0.5rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  background-color: rgb(61, 18, 104);
+  width: fit-content;
+  border-radius: 10px;
+  -webkit-box-shadow: 9px 8px 21px 3px #000000; 
+  box-shadow: 9px 8px 21px 3px #000000;
+  font-size: 2rem;
+}
+
+.listButtons a:hover {
+  background-color: rgb(100, 52, 148);
+}
+
+.buttons {
+  margin: 1.3rem;
+  margin-top: 4rem;
+  border-radius: 10px;
+  width: fit-content;
+  justify-content: center;
+}
+.buttons a {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(61, 18, 104);
+  border-radius: 10px;
+  margin-top: 2.2rem;
+  height: 3rem;
+  padding: 1.5rem;
+  -webkit-box-shadow: 9px 8px 21px 3px #000000; 
+  box-shadow: 9px 8px 21px 3px #000000;
+  font-size: 1.8rem;
+}
+
+.buttons a:hover {
+  background-color: rgb(100, 52, 148);
+}
+
+.haltere {
+  width: 23rem;
+  position: absolute;
+  top: 14rem;
+  left: 40rem;
+}
+
+h2 {
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+  margin-left: 1.2rem;
+  margin-bottom: 1.8rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.inicio {
+  position: absolute;
+  left: 68rem;
+  bottom: 3.6rem;
+  top: auto;
+  width: 5rem;
+  -webkit-box-shadow: 5px 5px 0px 0px rgba(61, 18, 104, 0.712),
+    10px 10px 0px 0px rgba(61, 18, 104, 0.712),
+    15px 15px 0px 0px rgba(61, 18, 104, 0.712),
+    inset 16px 9px 32px 20px rgba(61, 18, 104, 0.712);
+  box-shadow: 5px 5px 0px 0px rgba(61, 18, 104, 0.712),
+    10px 10px 0px 0px rgba(61, 18, 104, 0.712),
+    15px 15px rgba(61, 18, 104, 0.712),
+    inset 16px 9px 32px 20px rgba(61, 18, 104, 0.938);
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+  padding: 0.5rem;
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    zoom: 250%;
+  }
+}
