@@ -1,4 +1,4 @@
-@font-face {
+  @font-face {
   font-family: DmSans;
   src: url('../assets/fonts/DMSans-Bold.ttf');
 }
@@ -30,15 +30,23 @@ body {
     rgba(9, 9, 121, 1) 55%,
     rgba(126, 184, 255, 0.9374124649859944) 100%
   );
+  font-family: DmSans;
+  margin: 0%;
+  margin-top: 1.5rem;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 100vh;
+  font-weight: bold;
 }
 
 header {
   display: flex;
   justify-content: center;
-  margin: 0% 1.5rem;
+  margin: 0%;
   font-family: Racing;
   align-items: center;
   height: auto;
+  border-bottom: 0.25rem solid var(--secundary-color);
 }
 
 header h1 {
@@ -93,4 +101,93 @@ header .git-icon img {
   border-radius: 75%;
   border: 0.5px solid black;
   width: 45%;
+  margin-top: 1.5rem;
+}
+
+.lists {
+  display: flex;
+  justify-content: space-around;
+  margin: 5vh;
+  margin-left: -2rem;
+  font-size: 1.8rem;
+  align-items: center;
+}
+
+.lists a {
+  background-color: var(--quaternary-color);
+  color: var(--terciary-color);
+  text-decoration: none;
+  padding: 0.8rem;
+  border-radius: 1.5rem;
+}
+
+.formButtons {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin-left: 7rem;
+  font-size: 1.8rem;
+  align-content: center;
+}
+
+.formButtons a {
+  text-decoration: none;
+  background-color: var(--quaternary-color);
+  margin: 2vh;
+  margin-bottom: 6vh;
+  padding: 0.8rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  color: var(--terciary-color);
+}
+
+.lists a:hover,
+.formButtons a:hover {
+  background-color: var(--terciary-color);
+  color: var(--quaternary-color);
+  font-size: 2rem;
+  transition: 0.4s;
+  transition-timing-function: linear;
+}
+
+.haltere {
+  width: 30%;
+  position: absolute;
+  right: calc(100vw - 75%);
+  top: calc(100vh - 75%);
+}
+
+.haltere:hover {
+  animation-name: haltere;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes haltere {
+  0% {
+    transform: rotateX(0deg);
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotateX(360deg);
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotateX(0);
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotateX(360deg);
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@media (min-width:720px){
+  
 }

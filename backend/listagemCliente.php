@@ -20,7 +20,7 @@
         <nav>
             <h1>Academia Boa Forma</h1>
             <a href="http://github.com/ayanokoujifl" target="_blank" class="git">
-                <img src="../styles/assets/git.svg" alt='GitHubIcon'>
+                <img src="../assets/git.svg" alt='GitHubIcon'>
                 <p class="">Luís Gustavo</p>
                 </div>
             </a>
