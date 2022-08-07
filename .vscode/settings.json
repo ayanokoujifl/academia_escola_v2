@@ -48,5 +48,6 @@
     "Salario",
     "sucesso",
     "Valores"
-  ]
+  ],
+  "prettier.trailingComma": "all"
 }

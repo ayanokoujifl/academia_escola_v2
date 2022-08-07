@@ -1,0 +1,96 @@
+@font-face {
+  font-family: DmSans;
+  src: url('../assets/fonts/DMSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: Racing;
+  src: url('../assets/fonts/RacingSansOne-Regular.ttf');
+}
+
+:root {
+  font-size: 62.5%;
+  --primary-color-font: #ffffff;
+  --secundary-color: #090979;
+  --terciary-color: #020024;
+  --quaternary-color: #7eb8ff;
+  --fonte-titulo: Racing;
+  --fonte-padrao: DmSans;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 55%,
+    rgba(126, 184, 255, 0.9374124649859944) 100%
+  );
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin: 0% 1.5rem;
+  font-family: Racing;
+  align-items: center;
+  height: auto;
+}
+
+header h1 {
+  margin: 0%;
+  font-size: 5.4rem;
+  color: #fff;
+  letter-spacing: 1.5mm;
+  align-items: center;
+  font-style: italic;
+}
+
+header h1:hover {
+  animation-name: cor;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes cor {
+  from {
+    color: #fff;
+    font-size: 5.4rem;
+  }
+  to {
+    color: var(--quaternary-color);
+    font-size: 6rem;
+  }
+}
+
+header a {
+  position: absolute;
+  right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0%;
+  align-items: center;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: var(--primary-color-font);
+}
+
+header a p {
+  display: flex;
+  align-items: center;
+  margin-top: -0.09rem;
+}
+
+header .git-icon img {
+  color: black;
+  background: black;
+  border-radius: 75%;
+  border: 0.5px solid black;
+  width: 45%;
+}
