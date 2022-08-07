@@ -1,4 +1,4 @@
-  @font-face {
+@font-face {
   font-family: DmSans;
   src: url('../assets/fonts/DMSans-Bold.ttf');
 }
@@ -188,6 +188,47 @@ header .git-icon img {
   }
 }
 
-@media (min-width:720px){
-  
+/*Lists*/
+
+h2 {
+  font-size: 3.5rem;
+  color: var(--quaternary-color);
+  text-align: center;
+}
+
+table {
+  font-size: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--terciary-color);
+  background-color: var(--quaternary-color);
+}
+
+tr {
+  text-align: center;
+}
+
+td {
+  padding: 0.6rem;
+}
+th {
+  padding: 0.6rem;
+}
+
+.inicio-list {
+  background-color: var(--quaternary-color);
+  color: var(--terciary-color);
+  text-decoration: none;
+  border-radius: 1.5rem;
+  padding: 0.8rem;
+  font-size: 1.8rem;
+}
+
+.inicio-list:hover {
+  background-color: var(--terciary-color);
+  color: var(--quaternary-color);
+  transition: 0.4s;
+  transform-origin: 50%;
+  transition-timing-function: linear;
+  transition-property: all;
 }

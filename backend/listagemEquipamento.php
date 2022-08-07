@@ -5,26 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    <link rel="stylesheet" href="../styles/style.css">
     <title>Equipamentos</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="../styles/assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../styles/assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../styles/assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="../styles/assets/favicon/site.webmanifest">
-    <link rel="stylesheet" type="text/css" href="../styles/estilização/Tables.css">
-    <link rel="stylesheet" type="text/css" href="../styles/estilização/BodyAll.css">
-    <link rel="stylesheet" href="../styles/estilização/NavBar.css">
+
+</head>
 
 <body>
     <header>
-        <nav>
-            <h1>Academia Boa Forma</h1>
-            <a href="http://github.com/ayanokoujifl" target="_blank" class="git">
-                <img src="../styles/assets/git.svg" alt='GitHubIcon'>
-                <p class="">Luís Gustavo</p>
-                </div>
-            </a>
+        <h1>Academia Boa Forma</h1>
+        <a href="http://github.com/ayanokoujifl" target="_blank" class="git-icon">
+            <img src="../assets/git.svg" alt='GitHubIcon'>
+            <p>Luís Gustavo</p>
             </div>
-        </nav>
+        </a>
+        </div>
     </header>
 
     <h2>
@@ -32,10 +30,10 @@
             Listagem de Equipamentos:
         </i>
     </h2>
-    <a href="../index.html" class="inicio">
+    <a href="../index.html" class="inicio-list">
         Inicio
     </a>
-    <table>
+    <table border="1px">
         <tr>
             <th>
                 ID
