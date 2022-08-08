@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    <link rel="stylesheet" href="../styles/style.css">
     <title>Document</title>
 
 </head>
@@ -40,11 +41,10 @@
             <input type="text" name="input_modalidades" id="input_modalidades">
             <label class="lbl" for="input_recebimento"> Recebimento: </label>
             <input type="text" name="input_recebimento" id="input_recebimento">
-            <div>
-                <button class="save-button">Salvar</button>
+
+            <button class="save-button">Salvar</button>
         </form>
-        <a class="inicio" href="../index.html">Inicio </a>
-    </div>
+        <a class="inicio-form" href="../index.html">Inicio </a>
     </div>
 
 </body>

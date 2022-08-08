@@ -148,6 +148,7 @@ header .git-icon img {
   font-size: 2rem;
   transition: 0.4s;
   transition-timing-function: linear;
+  font-weight: 900;
 }
 
 .haltere {
@@ -222,6 +223,8 @@ th {
   border-radius: 1.5rem;
   padding: 0.8rem;
   font-size: 1.8rem;
+  position: absolute;
+  right: 20rem;
 }
 
 .inicio-list:hover {
@@ -231,4 +234,62 @@ th {
   transform-origin: 50%;
   transition-timing-function: linear;
   transition-property: all;
+  font-weight: 900;
+}
+
+/*Forms*/
+
+form {
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  justify-content: center;
+  margin: 0 auto;
+  color: var(--quaternary-color);
+  background-color: var(--terciary-color);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+}
+
+.save-button {
+  border: 3px solid var(--terciary-color);
+  margin: 0 auto;
+  align-items: center;
+  justify-items: center;
+  margin-top: 1.5rem;
+  width: 8rem;
+  background-color: var(--quaternary-color);
+  font-size: 1.8rem;
+  color: var(--terciary-color);
+  font-weight: 900;
+  text-align: center;
+}
+
+.save-button:hover,
+form {
+  background-color: var(--terciary-color);
+  color: var(--quaternary-color);
+  transition: 0.4s;
+  transition-timing-function: linear;
+  border: 3px solid var(--quaternary-color);
+}
+
+.inicio-form {
+  font-size: 1.8rem;
+  background-color: var(--quaternary-color);
+  color: var(--terciary-color);
+  padding: 00.8rem;
+  border-radius: 1.5rem;
+  text-decoration: none;
+  position: absolute;
+  right: 20rem;
+  margin-top: -4.3rem;
+}
+
+.inicio-form:hover {
+  background-color: var(--terciary-color);
+  color: var(--quaternary-color);
+  transition: 0.4s;
+  transition-timing-function: linear;
 }

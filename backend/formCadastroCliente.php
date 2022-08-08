@@ -24,21 +24,22 @@
     </a>
     </div>
   </header>
-  <div class="align-form">
+
+  <div>
     <h2>
       <i style="margin: 0px;"> Cadastro de clientes</i>
     </h2>
-    <form action="cadastroCliente.php" method="POST" class="form">
-      <label for="input_nome" class="lbl"> Nome: </label>
+    <form action="cadastroCliente.php" method="POST" class="">
+      <label for="input_nome" class=""> Nome: </label>
       <input type="text" name="input_nome" id="input_nome">
 
-      <label for="input_cpf" class="lbl"> CPF: </label>
+      <label for="input_cpf" class=""> CPF: </label>
       <input type="text" name="input_cpf" id="input_cpf">
 
-      <label for="input_idade" class="lbl"> Idade: </label>
+      <label for="input_idade" class=""> Idade: </label>
       <input type="text" name="input_idade" id="input_idade">
 
-      <label for="input_modalidades" class="lbl"> Modalidades: </label>
+      <label for="input_modalidades" class=""> Modalidades: </label>
       <select name="input_modalidades" id="input_modalidades" style="margin:5px;">
 
         <?php
@@ -57,7 +58,7 @@
       <input type="text" name="input_mensalidade" id="input_mensalidade">
       <button class="save-button">Salvar</button>
     </form>
-    <a href="../index.html" class="inicio">Inicio </a>
+    <a href="../index.html" class="inicio-form">Inicio </a>
   </div>
 </body>
 

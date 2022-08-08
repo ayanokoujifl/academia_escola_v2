@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
   <link rel="manifest" href="../assets/favicon/site.webmanifest">
+  <link rel="stylesheet" href="../styles/style.css">
   <title>Cadastro de Modalidades</title>
 </head>
 
@@ -22,6 +23,7 @@
     </a>
     </div>
   </header>
+
   <div class="align-form">
     <h2>
       <i style="margin: 0px;"> Cadastro de modalidades</i>
@@ -36,8 +38,9 @@
         Salvar
       </button>
     </form>
+    <a class="inicio-form" href="../index.html">Inicio </a>
   </div>
-  <a class="inicio" href="../index.html">Inicio </a>
+
 </body>
 
 </html>
