@@ -1,11 +1,11 @@
 @font-face {
   font-family: DmSans;
-  src: url('../assets/fonts/DMSans-Bold.ttf');
+  src: url("../assets/fonts/DMSans-Bold.ttf");
 }
 
 @font-face {
   font-family: Racing;
-  src: url('../assets/fonts/RacingSansOne-Regular.ttf');
+  src: url("../assets/fonts/RacingSansOne-Regular.ttf");
 }
 
 :root {
@@ -152,10 +152,10 @@ header .git-icon img {
 }
 
 .haltere {
-  width: 30%;
+  width: 35rem;
   position: absolute;
-  right: calc(100vw - 75%);
-  top: calc(100vh - 75%);
+  right: 18%;
+  top: 30%;
 }
 
 .haltere:hover {
@@ -292,4 +292,34 @@ form {
   color: var(--quaternary-color);
   transition: 0.4s;
   transition-timing-function: linear;
+}
+
+@media (min-width: 1200px) {
+  body {
+    zoom: 1.5;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      180deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 45%,
+      rgba(126, 184, 255, 0.9374124649859944) 75%
+    );
+  }
+  .haltere {
+    width: 35rem;
+    position: absolute;
+    right: 24%;
+    top: 35%;
+  }
+
+  .formButtons a {
+    text-decoration: none;
+    background-color: var(--quaternary-color);
+    margin: 2vh;
+    margin-bottom: 4vh;
+    padding: 0.8rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    color: var(--terciary-color);
+  }
 }
