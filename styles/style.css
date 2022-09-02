@@ -1,11 +1,11 @@
 @font-face {
   font-family: DmSans;
-  src: url("../assets/fonts/DMSans-Bold.ttf");
+  src: url('../assets/fonts/DMSans-Bold.ttf');
 }
 
 @font-face {
   font-family: Racing;
-  src: url("../assets/fonts/RacingSansOne-Regular.ttf");
+  src: url('../assets/fonts/RacingSansOne-Regular.ttf');
 }
 
 :root {
@@ -154,8 +154,8 @@ header .git-icon img {
 .haltere {
   width: 35rem;
   position: absolute;
-  right: 18%;
-  top: 30%;
+  right: 350px;
+  top: 180px;
 }
 
 .haltere:hover {
@@ -294,7 +294,7 @@ form {
   transition-timing-function: linear;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1350px) {
   body {
     zoom: 1.5;
     background: rgb(2, 0, 36);
@@ -321,5 +321,49 @@ form {
     border-radius: 1.5rem;
     text-align: center;
     color: var(--terciary-color);
+  }
+}
+
+.formResp {
+  margin-top: 0.5rem;
+  font-size: 2.2rem;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 50px;
+}
+
+.resp {
+  display: flex;
+  text-align: center;
+  background-color: var(--quaternary-color);
+  color: var(--terciary-color);
+  padding: 0.7rem;
+  border-radius: 15px;
+}
+
+.resp:hover {
+  animation-name: fundo;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fundo {
+  0% {
+    background-color: var(--quaternary-color);
+    color: var(--terciary-color);
+  }
+  30% {
+    background-color: var(--secundary-color);
+    color: var(--quaternary-color);
+  }
+  100% {
+    background-color: var(--terciary-color);
+    color: var(--quaternary-color);
   }
 }

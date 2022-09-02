@@ -3,7 +3,7 @@
     {
         private static $dsn = 'mysql:host=localhost;dbname=ACADEMIA;port=3306';
         private static $usuario = 'root';
-        private static $senha = '12345';
+        private static $senha = 'luis7180';
         private static $conexao = null;
 
         public static function getConexao()

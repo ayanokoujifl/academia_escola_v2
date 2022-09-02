@@ -29,10 +29,9 @@
     $mensalidade = filter_input(INPUT_POST, 'input_mensalidade');
 
     $cliente = new Cliente($nome, null, $idade, $modalidade, $cpf, $mensalidade);
-
     $dc = new DaoCliente();
     if ($dc->incluir($cliente)) {
-        echo '<span class="formResp">' . $cliente->getNome() . ' foi cadastrado!</span>';
+        echo '<span class="formResp"> <p class="resp">' . $cliente->getNome() . ' foi cadastrado!</p></span>';
     } else {
         echo '<span class="formResp">Erro no cadastro de cliente!</formResp>';
     }
