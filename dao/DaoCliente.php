@@ -6,7 +6,8 @@ class DaoCliente
     public function listar()
     {
         $lista = [];
-        $pst = Conexao::getPreparedStatement('select * from cliente');
+        $pst = Conexao::getPreparedStatement('select c.*,m.nome as NOME_MODALIDADE from cliente c inner join modalidades m
+        on c.modalidades=m.id');
         $pst->execute();
         $lista = $pst->fetchAll(PDO::FETCH_ASSOC);
         return $lista;
@@ -33,7 +34,7 @@ class DaoCliente
     {
         $sql = 'delete from cliente where id=?';
         $pst = Conexao::getPreparedStatement($sql);
-        $pst->bindValue(1,$cliente->getId());
+        $pst->bindValue(1, $cliente->getId());
         if ($pst->execute()) {
             return true;
         } else {

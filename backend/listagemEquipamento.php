@@ -42,6 +42,9 @@
                 Nome
             </th>
             <th>
+                Codigo Modalidade
+            </th>
+            <th>
                 Modalidade
             </th>
             <th>
@@ -60,6 +63,7 @@
             echo '<td>' . $linha['ID'] . '</td>';
             echo '<td>' . $linha['NOME'] . '</td>';
             echo '<td>' . $linha['MODALIDADES'] . '</td>';
+            echo '<td>' . $linha['NOME_MODALIDADE'] . '</td>';
             echo '<td>' . $linha['PERIODO_REVISAO'] . '</td>';
         }
         ?>

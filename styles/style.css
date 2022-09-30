@@ -152,10 +152,10 @@ header .git-icon img {
 }
 
 .haltere {
-  width: 35rem;
+  width: 30%;
   position: absolute;
-  right: 350px;
-  top: 180px;
+  right: 20%;
+  top: 30%;
 }
 
 .haltere:hover {
@@ -224,6 +224,7 @@ th {
   padding: 0.8rem;
   font-size: 1.8rem;
   position: absolute;
+  bottom: 1rem;
   right: 20rem;
 }
 
@@ -365,5 +366,115 @@ form {
   100% {
     background-color: var(--terciary-color);
     color: var(--quaternary-color);
+  }
+}
+
+section {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  header h1 {
+    font-size: 400%;
+    animation: none;
+  }
+
+  header h1:hover {
+    animation: none;
+  }
+
+  header a img {
+    height: 75%;
+  }
+
+  header a p {
+    font-size: 80%;
+  }
+
+  .lists {
+    display: none;
+  }
+
+  .formButtons {
+    display: none;
+  }
+
+  section {
+    display: block;
+    font-size: 140%;
+    text-transform: capitalize;
+  }
+
+  section > ul {
+    padding: 0%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  section > ul > li {
+    padding: 0%;
+    list-style: none;
+    background-color: #7eb8ff;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.3s;
+    width: 120px;
+    text-align: center;
+  }
+
+  section > ul > li:hover {
+    background-color: #090979;
+    color: #7eb8ff;
+    transition: 0.3s;
+  }
+
+  section ul li ul {
+    list-style: none;
+    padding: 0%;
+    display: none;
+    margin-top: 8px;
+    width: 120px;
+  }
+
+  section ul li:hover ul {
+    display: block;
+    position: absolute;
+  }
+
+  section > ul > li > ul > li {
+    margin-top: 5px;
+    margin-bottom: 1.2rem;
+    width: 120px;
+    text-align: center;
+  }
+
+  section > ul > li > ul > li > a {
+    display: flex;
+    background-color: #7eb8ff;
+    color: #020024;
+    transition: 0.3s;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+    width: 120px;
+    text-align: center;
+    margin: 0% auto;
+    justify-content: center;
+  }
+
+  section ul li ul li a:hover {
+    background-color: #090979;
+    color: #7eb8ff;
+    transition: 0.3s;
+  }
+
+  aside {
+    display: flex;
+    justify-content: center;
+  }
+
+  .haltere {
+    position: unset;
+    margin-top: 10rem;
   }
 }

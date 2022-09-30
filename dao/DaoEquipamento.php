@@ -4,7 +4,8 @@ class DaoEquipamento
     public function listar()
     {
         $lista = [];
-        $pst = Conexao::getPreparedStatement('select * from equipamentos');
+        $pst = Conexao::getPreparedStatement('select e.*,m.nome as NOME_MODALIDADE from equipamentos e inner join modalidades m 
+        on m.id=e.modalidades');
         $pst->execute();
         $lista = $pst->fetchAll(PDO::FETCH_ASSOC);
         return $lista;
@@ -29,7 +30,7 @@ class DaoEquipamento
     {
         $sql = 'delete from equipamentos where id=?';
         $pst = Conexao::getPreparedStatement($sql);
-        $pst->bindValue(1,$equipamento->getId());
+        $pst->bindValue(1, $equipamento->getId());
         if ($pst->execute()) {
             return true;
         } else {

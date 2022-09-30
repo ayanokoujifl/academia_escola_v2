@@ -28,11 +28,7 @@
     <h2>
         <i> Listagem de Clientes:</i>
     </h2>
-    <div class="btnInicio">
-        <a href="../index.html" class="inicio-list">
-            Início
-        </a>
-    </div>
+
 
     <table border="1">
         <tr>
@@ -49,10 +45,13 @@
                 CPF
             </th>
             <th>
-                Modalidades
+                Codigo modalidade
             </th>
             <th>
                 Mensalidades
+            </th>
+            <th>
+                Modalidade
             </th>
         </tr>
         <?php
@@ -70,9 +69,15 @@
             echo '<td>' . $linha['CPF'] . '</td>';
             echo '<td>' . $linha['MODALIDADES'] . '</td>';
             echo '<td>' . $linha['MENSALIDADES'] . '</td>';
+            echo '<td>' . $linha['NOME_MODALIDADE'] . '</td>';
         }
         ?>
     </table>
+    <div class="btnInicio">
+        <a href="../index.html" class="inicio-list">
+            Início
+        </a>
+    </div>
 </body>
 
 </html>
